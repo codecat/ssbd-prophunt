@@ -1,0 +1,27 @@
+<gui>
+	<sprites>
+		<sprite name="icon" texture="gui/icons.png">
+			<frame>0 335 20 20</frame>
+		</sprite>
+	</sprites>
+
+	<doc>
+		<group>
+			<group inner="true" anchor="0 0.1">
+				<rect width="26" height="28" color="0 0 0 125">
+					<sprite src="icon" anchor="0.5 0.5" />
+				</rect>
+
+				<rect width="114" height="13" offset="28 0" color="0 0 0 125">
+					<text id="hiders-left" font="gui/fonts/font_msref10.fnt" text="XX hiders" offset="3 0" />
+				</rect>
+
+				<rect width="114" height="13" offset="28 15" color="0 0 0 125">
+					<text id="seekers-left" font="gui/fonts/font_msref10.fnt" text="XX seekers" offset="3 0" />
+				</rect>
+			</group>
+
+			<text id="limit-time" anchor="0.5 0.05" font="gui/fonts/font_agency16.fnt" text="XX:XX" />
+		</group>
+	</doc>
+</gui>

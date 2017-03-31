@@ -1,0 +1,9 @@
+<gui>
+	<doc>
+		<group>
+			<rect width="2048" height="2048" color="#000000FF" />
+			<text font="gui/fonts/font_msref12_bold.fnt" text="You are seeking." anchor="0.5 0.4" />
+			<text font="gui/fonts/font_msref12.fnt" id="time" text="XXX" anchor="0.5 0.55" />
+		</group>
+	</doc>
+</gui>
