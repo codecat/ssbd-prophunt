@@ -1,0 +1,21 @@
+<info>
+	<name>PROPHUNT</name>
+	<description>Props hide, seekers find.</description>
+	<multiplayer>true</multiplayer>
+	<saving>false</saving>
+
+	<players min="1" max="16" />
+
+	<start>
+		<level name="Test" lvl="levels/test.lvl" />
+	</start>
+
+	<modifiers>
+		<modifier forced="true" id="VERSUS" />
+	</modifiers>
+
+	<classmaps>
+		<behavior from="Player" to="PhPlayer" />
+		<behavior from="PlayerHusk" to="PhPlayerHusk" />
+	</classmaps>
+</info>

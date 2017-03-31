@@ -1,0 +1,191 @@
+<dict>
+	<array name="scripts">
+		<array><string>LevelStart</string><int>58</int><vec3>-32 -72 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array><string>LevelStart</string><int>59</int><vec3>-32 48 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array><string>LevelStart</string><int>60</int><vec3>16 -16 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+	</array>
+	<dict name="units">
+		<array name="doodads/wall/egypt_fancy/fancy_crn_se.unit"><vec2>168 200</vec2><int>1</int></array>
+		<array name="doodads/generic/china_pot_v2.unit">
+			<vec2>-16 -152</vec2>
+			<int>31</int>
+			<vec2>16 -152</vec2>
+			<int>30</int>
+			<vec2>80 -152</vec2>
+			<int>37</int>
+			<vec2>64 -152</vec2>
+			<int>36</int>
+			<vec2>-32 -152</vec2>
+			<int>35</int>
+			<vec2>48 -152</vec2>
+			<int>34</int>
+			<vec2>32 -152</vec2>
+			<int>33</int>
+			<vec2>0 -152</vec2>
+			<int>32</int>
+		</array>
+		<array name="doodads/terrain/grass_high_garden_dark.unit"><vec2>-56 144</vec2><int>28</int><vec2>-32 144</vec2><int>27</int><vec2>-8 144</vec2><int>26</int></array>
+		<array name="doodads/generic/china_box_v2.unit"><vec2>104 -144</vec2><int>57</int><vec2>120 -144</vec2><int>56</int><vec2>152 -144</vec2><int>55</int><vec2>136 -144</vec2><int>54</int></array>
+		<array name="doodads/generic/china_box_v3.unit"><vec2>104 -120</vec2><int>5</int><vec2>152 -120</vec2><int>2</int><vec2>136 -120</vec2><int>3</int><vec2>120 -120</vec2><int>4</int></array>
+		<array name="doodads/generic/base_pallet.unit"><vec2>128 -16</vec2><int>6</int></array>
+		<array name="doodads/terrain/grass_high_garden.unit"><vec2>-96 144</vec2><int>13</int><vec2>-120 144</vec2><int>12</int><vec2>-144 144</vec2><int>11</int></array>
+		<array name="doodads/generic/china_box_v1.unit"><vec2>152 -168</vec2><int>10</int><vec2>136 -168</vec2><int>9</int><vec2>104 -168</vec2><int>8</int><vec2>120 -168</vec2><int>7</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_crn_sw.unit"><vec2>-232 200</vec2><int>29</int></array>
+		<array name="doodads/generic/aircraft.unit"><vec2>96 128</vec2><int>52</int></array>
+		<array name="doodads/generic/china_pot_v1.unit">
+			<vec2>-80 -152</vec2>
+			<int>44</int>
+			<vec2>-144 -152</vec2>
+			<int>51</int>
+			<vec2>-128 -152</vec2>
+			<int>50</int>
+			<vec2>-64 -152</vec2>
+			<int>45</int>
+			<vec2>-96 -152</vec2>
+			<int>46</int>
+			<vec2>-112 -152</vec2>
+			<int>47</int>
+			<vec2>-176 -152</vec2>
+			<int>48</int>
+			<vec2>-160 -152</vec2>
+			<int>49</int>
+		</array>
+		<array name="doodads/generic/base_fancy_table.unit"><vec2>-184 0</vec2><int>16</int><vec2>-184 -88</vec2><int>15</int><vec2>-184 88</vec2><int>14</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_h_128.unit">
+			<vec2>-216 200</vec2>
+			<int>24</int>
+			<vec2>40 200</vec2>
+			<int>23</int>
+			<vec2>-88 200</vec2>
+			<int>22</int>
+			<vec2>-216 -200</vec2>
+			<int>21</int>
+			<vec2>40 -200</vec2>
+			<int>20</int>
+			<vec2>-88 -200</vec2>
+			<int>19</int>
+		</array>
+		<array name="doodads/terrain/tree_oak.unit"><vec2>-96 96</vec2><int>17</int><vec2>8 -56</vec2><int>18</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_crn_ne.unit"><vec2>168 -200</vec2><int>25</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_v_128.unit">
+			<vec2>-232 -72</vec2>
+			<int>41</int>
+			<vec2>168 56</vec2>
+			<int>40</int>
+			<vec2>168 -72</vec2>
+			<int>39</int>
+			<vec2>168 -200</vec2>
+			<int>38</int>
+			<vec2>-232 56</vec2>
+			<int>42</int>
+			<vec2>-232 -200</vec2>
+			<int>43</int>
+		</array>
+		<array name="doodads/generic/base_fancy_table_prop_mug.unit">
+			<vec2>128 -72</vec2>
+			<int>-5</int>
+			<vec2>144 -80</vec2>
+			<int>-6</int>
+			<vec2>112 -80</vec2>
+			<int>-1</int>
+			<vec2>128 -88</vec2>
+			<int>-2</int>
+			<vec2>-192 -120</vec2>
+			<int>-3</int>
+			<vec2>-176 8</vec2>
+			<int>-4</int>
+		</array>
+		<array name="doodads/wall/egypt_fancy/fancy_crn_nw.unit"><vec2>-232 -200</vec2><int>53</int></array>
+	</dict>
+	<array name="tiles">
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004150a5f730000000000000000003e69215f6d032b0000000000000000541a474b5741594000000000000000622824365250620342000000000000695d25364e521040211700000000000043305e0e747b2b660a7d00000000006f7c3b0524205c596a147b00000000001f3e6e631a711927332f75000000000027746641684c2c153e673f00000000664951283c533d144d5f7523</bytes>
+					<string name="tileset">tilesets/garden_grass.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000036094d00000000000000443e0d1f51060931382109460923491d6a686f1610064e7b5c761a2d55024d236b4f535d284e2b24647c2363010438254f7670657e0a45273e1c0f317c4634091237645a2a06676c5f77624f3d700e563a7b7e4e6706373615595d626d4b4062160e022d510a4d25626f2f4b3f31656e2856401a0c7e53345b7e42112471674b5b402f1270320e47432c5e414c071946233f734b51460525656e4c20305b7c1f253a7d4c6f79093a2528</bytes>
+					<string name="tileset">tilesets/garden_grass.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004e2e4e68000000000000000000000000461431542343000000000000000000004d3b2d3e4f08690000000000000000001d591a032221752e000000000000000018517d097c3e30235800000000000000556d4b275908662a33410000000000006f5773484d15390a0f1b000000000000175b270c225d4e1f34537600000000007267342e20097d4d2043310000000000474d0c51644761604541190c00000000696f2f757e4d1c493c060c4300000000</bytes>
+					<string name="tileset">tilesets/garden_grass.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000271c0f76446b3e156c74197c000000006e49054c5a166c370a2f114a0000000048671417664578367328472600000000692529447e7a463c6b270e42000000003a5158180f794e022e18405d00000000164e1e1422086a1b74670b2b00000000282b06587d16790e014215150000000034170f3e6b4d4f121b774271000000004b7479135b711a285f4b252000000000260e1b1d2e3842225a3c4651000000001e194f0a084627694923043800000000135114137a2504662569637c00000000311a1b2668411276615f1642000000000e064a6c3677286563091057000000001c39441f085465403c02326b0000000000630b6478196d7c761c6634</bytes>
+					<string name="tileset">tilesets/garden_grass.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">4e2b48366c5e286b2b5b6f141240291e443c262705053e462b133a7e5b61194f59726c2e0b696c177b4a0d1976053742781d792b1a783a20252e4e2a1763622f6a727e6409290c154b10742a401d11123b244c224c2a0550562309195a4a2b0f2a287a7a315e34543f23705960045e1e1a38562937261e4c5517303832170a45092968464c272844570e676d452728141b21306344304f17704a23262316797b7a3b56580978146f360e4e6817254c2e3930277d6c441e2c4615213f051d2d0e675e2537695c6f2d065a3f3d5b3b5a693e2a0f1719746e3d32460f106b522c431267412b2e3147097b1e6f4e1b234f12616472040470542c0631592734191930</bytes>
+					<string name="tileset">tilesets/garden_grass.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">3a0659243c4e290b2b0c727c000000006353675d2a3d4c4d15404c5a3e0000000f0402271a2f2538301c3a2f4a0000006c1d2b1f6f1f465e391a464f6f0000001d244b32130e1f132d30794b1f0000002e1c0b787d773d2d552a334030000000521809277a4f4a45363c604531000000351d1e51704b3a2d113e0a7b0a690000293b0d445c4e71546760713b363a00000f2804325506094c0a193637784000004c3b32513707426c3b1e53321f4b0000756c124a021d50692078787c176200004a277d6b18352e70596b495e45430000212c5c7a7d4131271d0407206a3200006b5c4f0a73050b29243122253a4700001d203c0c1c01105b35423c1c53000000</bytes>
+					<string name="tileset">tilesets/garden_grass.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000006b454b501b053e327008130000000000575d701367547013682b690000000000003069352b3a6532674f77000000000000154a27103d231c2e7e3d00000000000000244d3f1b1d663d1477000000000000006f0b55070e72476b100000000000000000584d652d237d42060000000000000000001878036f794a1c000000000000000000001f642c0f447b0000000000000000000000203a486710000000000000000000000000006143700000000000000000000000000000001500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/garden_grass.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">44130a737607360f791d4a0e340c2c545332051871240975174d1f1f404b5c2d5614413a605e632d3e1f0957033808536135441e522b09694c426a5f6230315437664027365f27296b7150553b0a4c407e5c030d0d3746394d16252b0e155348103c4211240449664a372439130b5b62240d10461c1f0f152a252f4e1c11571119560c2263230b4f2e3b7330391e5c53393e2725745e30070538162e502c323866784c1b756d6a361504745265471c3a2b4e28063f6715744945332137751d3a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/garden_grass.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">7c66253a73485f0b6f3a6d16100000007d20293465333d4c313d0c527e00000009417b6b171c017840316b083f000000095e65147d5c655b1266133f00000000334f45796a0a4531294d5155000000004b1a4c340712326102073700000000003975081b08395f50767e0000000000003a4e03314f340938692d00000000000030776c2c273e3e5500000000000000006c2d415d3e2d2f0000000000000000004c7752180000000000000000000000007100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/garden_grass.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 512</vec2>
+		</dict>
+	</array>
+	<dict name="game-mode">
+		<string name="Class">PropHunt</string>
+		<int name="StartingWeapons">65542</int>
+	</dict>
+	<int name="version">1</int>
+	<dict name="lighting">
+		<string name="environment">effects/env/egypt_outside.env</string>
+	</dict>
+</dict>
