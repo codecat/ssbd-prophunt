@@ -68,17 +68,23 @@ class PropHunt : TeamVersusGameMode
 
 	void RespawnPlayer(PlayerRecord@ record)
 	{
-		record.actor.m_unit.Destroy();
-
-		if (Network::IsServer()) {
-			AttemptRespawn(record.peer);
-		} else {
-			Network::Message("AttemptRespawn").SendToHost();
+		if (!Network::Server()) {
+			return;
 		}
+
+		record.actor.m_unit.Destroy();
+		@record.actor = null;
+		record.deadTime = g_scene.GetTime();
+
+		AttemptRespawn(record.peer);
 	}
 
 	void SetState(PhGameState state)
 	{
+		if (!Network::Server()) {
+			return;
+		}
+
 		if (m_state == PhGameState::EndOfRound && state == PhGameState::Hiding) {
 			print("[Prophunt] Starting new round, switching teams.");
 			m_team1.m_hiding = !m_team1.m_hiding;
@@ -97,11 +103,14 @@ class PropHunt : TeamVersusGameMode
 		}
 		m_state = state;
 		m_tmStartState = CurrPlaytimeLevel();
+
+		//TODO: Send network message to clients that state has changed
 	}
 
 	void Start(uint8 peer, SValue@ save, StartMode sMode) override
 	{
 		TeamVersusGameMode::Start(peer, save, sMode);
+
 		SetState(PhGameState::Hiding);
 	}
 
@@ -131,9 +140,11 @@ class PropHunt : TeamVersusGameMode
 		}
 	}
 
-	void UpdateFrame(int ms, GameInput& gameInput, MenuInput& menuInput) override
+	void HandleStates()
 	{
-		TeamVersusGameMode::UpdateFrame(ms, gameInput, menuInput);
+		if (!Network::IsServer()) {
+			return;
+		}
 
 		uint tmNow = CurrPlaytimeLevel() - m_tmStartState;
 		if (m_state == PhGameState::Hiding) {
@@ -149,6 +160,13 @@ class PropHunt : TeamVersusGameMode
 				SetState(PhGameState::Hiding);
 			}
 		}
+	}
+
+	void UpdateFrame(int ms, GameInput& gameInput, MenuInput& menuInput) override
+	{
+		TeamVersusGameMode::UpdateFrame(ms, gameInput, menuInput);
+
+		HandleStates();
 	}
 
 	void UpdateWidgets(int ms, GameInput& gameInput, MenuInput& menuInput) override
