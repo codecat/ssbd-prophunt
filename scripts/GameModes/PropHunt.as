@@ -66,11 +66,15 @@ class PropHunt : TeamVersusGameMode
 		@m_hud.m_weaponSwitcher = PhWeaponSwitch(m_guiBuilder, m_hud);
 	}
 
-	void RespawnPlayer(PlayerRecor@ record)
+	void RespawnPlayer(PlayerRecord@ record)
 	{
-		m_team1.m_players[i];
-		.actor.m_unit.Destroy();
-		SpawnPlayer(m_team);
+		record.actor.m_unit.Destroy();
+
+		if (Network::IsServer()) {
+			AttemptRespawn(record.peer);
+		} else {
+			Network::Message("AttemptRespawn").SendToHost();
+		}
 	}
 
 	void SetState(PhGameState state)
@@ -106,9 +110,9 @@ class PropHunt : TeamVersusGameMode
 		return PhTeamScore(team);
 	}
 
-	void SpawnPlayer(int i, int unitId = 0, uint team = 0) override
+	void SpawnPlayer(int i, vec2 pos = vec2(), int unitId = 0, uint team = 0) override
 	{
-		TeamVersusGameMode::SpawnPlayer(i, unitId, team);
+		TeamVersusGameMode::SpawnPlayer(i, pos, unitId, team);
 
 		PhPlayer@ player = cast<PhPlayer>(g_players[i].actor);
 		PhTeamScore@ score = cast<PhTeamScore>(FindTeamScore(team));
@@ -153,7 +157,7 @@ class PropHunt : TeamVersusGameMode
 
 		m_hudProphunt.Update(ms);
 
-		PlayerRecord@ player = GetLocalPlayerRecord();
+		VersusPlayerRecord@ player = cast<VersusPlayerRecord>(GetLocalPlayerRecord());
 
 		PhTeamScore@ team = cast<PhTeamScore>(GetPlayerTeam(player));
 		if (team is null) {
