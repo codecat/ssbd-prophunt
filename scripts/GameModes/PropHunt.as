@@ -68,7 +68,7 @@ class PropHunt : TeamVersusGameMode
 
 	void RespawnPlayer(PlayerRecord@ record)
 	{
-		if (!Network::Server()) {
+		if (!Network::IsServer()) {
 			return;
 		}
 
@@ -81,7 +81,7 @@ class PropHunt : TeamVersusGameMode
 
 	void SetState(PhGameState state)
 	{
-		if (!Network::Server()) {
+		if (!Network::IsServer()) {
 			return;
 		}
 
