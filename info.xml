@@ -17,5 +17,6 @@
 	<classmaps>
 		<behavior from="Player" to="PhPlayer" />
 		<behavior from="PlayerHusk" to="PhPlayerHusk" />
+		<behavior from="Breakable" to="PhBreakable" />
 	</classmaps>
 </info>
